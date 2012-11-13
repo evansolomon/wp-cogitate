@@ -5,7 +5,7 @@
 Cogitate is a [Twenty Twelve](http://wordpress.org/extend/themes/twentytwelve) child theme that I built for evansolomon.me.  I wanted to make a theme that:
 
 * Has ridiculously readable text
-* Is as minimalist as possible without sarificing fanciness
+* Is as minimalist as possible without sacrificing fanciness
 * Supports a blog and an independent-but-consistently-styled front page
 
 To me, those are the most important elements of a theme.  Cogitate is what I came up with.
