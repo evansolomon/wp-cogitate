@@ -24,7 +24,7 @@ Cogitate will fall back to Open Sans in the case that these fonts are not instal
 
 Since it's a child theme of it, Cogitate requires the Twenty Twelve theme.  I don't think there are any WordPress dependencies that aren't already enforced by Twenty Twelve.
 
-Cogitate requires PHP 5.4 because I am using a some [feature added in 5.4](http://php.net/manual/en/migration54.new-features.php).  Right now that includes the new short array syntax (`$array = [ 1, 2, 3 ];`) and short echo syntax (`<?= "Print this"; ?>`).  Cogitate also uses some features added in 5.3 ([closures](http://php.net/manual/en/functions.anonymous.php), but that requirement is largely irrelevant thanks to requiring 5.4 anyway.
+Cogitate requires PHP 5.4 because I am using a some [feature added in 5.4](http://php.net/manual/en/migration54.new-features.php).  Right now that includes the new short array syntax (`$array = [ 1, 2, 3 ];`) and short echo syntax (`<?= "Print this"; ?>`).  Cogitate also uses some features added in 5.3 ([closures](http://php.net/manual/en/functions.anonymous.php)), but that requirement is largely irrelevant thanks to requiring 5.4 anyway.
 
 WordPress only requires PHP 5.2.4 right now, so it's entirely possible for WordPress to work fine on your server and for Cogitate to break it.
 
