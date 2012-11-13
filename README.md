@@ -6,7 +6,7 @@ Cogitate is a [Twenty Twelve](http://wordpress.org/extend/themes/twentytwelve) c
 
 * Has ridiculously readable text
 * Is as minimalist as possible without sarificing fanciness
-* Supports a blog and an independant-but-consistently-styled front page
+* Supports a blog and an independent-but-consistently-styled front page
 
 To me, those are the most important elements of a theme.  Cogitate is what I came up with.
 
