@@ -1,0 +1,266 @@
+/*
+Theme Name: Cogitate
+Author: Evan Solomon
+Author URI: http://evansolomon.me
+Version: 1.0
+template: twentytwelve
+*/
+
+/* Everywhere */
+p,
+li,
+textarea {
+	font-family: 'Proxima Nova', proxima-nova, 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+	p,
+	#respond form textarea {
+		font-size: 16px;
+	}
+}
+
+.site-header h1.site-title {
+	text-align: right;
+	font-family: jaf-domus-titling-web, 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.site-title a {
+	border-bottom: 4px double #F38630;
+}
+
+/* Front Page */
+body.home .site-title {
+	font-size: 110px;
+	font-family: jaf-domus-titling-web, 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: -5px;
+	word-spacing: 10px;
+	padding-left: 10px;
+}
+
+@media (max-width: 850px) {
+	body.home .site-title {
+		font-size: 70px;
+		line-height: 100%;
+	}
+
+	body.home .site-title a {
+		padding-bottom: 20px;
+		margin-bottom: -30px;
+	}
+}
+
+@media (max-width: 400px) {
+	body.home .site-title {
+		font-size: 50px;
+		line-height: 90%;
+	}
+}
+
+
+body.home a,
+.entry-title a {
+	color: #00A8C9;
+}
+
+.frontpage-menu {
+	float: left;
+	width: 50%;
+}
+
+.frontpage-menu h2 {
+	font-variant: small-caps;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+.frontpage-menu ul {
+	overflow: auto;
+}
+
+.frontpage-menu li {
+	margin: 0;
+	font-size: 18px;
+	font-family: jaf-domus-titling-web, proxima-nova, 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.frontpage-menu li a {
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 5px 10px 5px 20px;
+	margin: 3px 20px 3px 0;
+	display: block;
+}
+
+.frontpage-menu li a:hover {
+	background: #F38630;
+	color: #FFF;
+}
+
+@media (max-width: 850px) {
+	.frontpage-menu li a,
+	.frontpage-menu h2 {
+		font-size: 90%;
+	}
+}
+
+@media (max-width: 550px) {
+	.frontpage-menu li a,
+	.frontpage-menu h2 {
+		font-size: 80%;
+	}
+}
+
+body.home .entry-content {
+	margin: 0 30% 0 30%;
+}
+
+@media (max-width: 630px) {
+	body.home .entry-content {
+		margin: 0 20% 0 20%;
+	}
+}
+
+@media (max-width: 470px) {
+	body.home .entry-content {
+		margin: 0 10% 0 10%;
+	}
+}
+
+body.home .menu {
+	list-style: none;
+}
+
+body.home article {
+	border-bottom: none;
+}
+
+.last-post {
+	clear: both;
+	padding-top: 60px;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+@media (max-width: 850px) {
+	.last-post {
+		max-width: 80%;
+	}
+}
+
+.last-post .teaser {
+	padding: 10px 0 20px 0;
+	font-size: 14px;
+	font-family: jaf-domus-titling-web, proxima-nova, 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+	.last-post .teaser {
+		font-size: 12px;
+	}
+}
+
+.last-post .title {
+	font-family: quatro-slab, 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 35px;
+	padding: 10px 0 20px 0;
+}
+
+.last-post .title a {
+	text-decoration: none;
+}
+
+.last-post p {
+	font-size: 20px;
+	line-height: 140%;
+}
+
+@media (max-width: 600px) {
+	.last-post p {
+		font-size: 18px;
+	}
+}
+
+/* Blog */
+.entry-header .entry-title {
+	font-family: quatro-slab, 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 60px;
+}
+
+@media (max-width: 600px) {
+	.entry-header .entry-title {
+		font-size: 30px;
+	}
+}
+
+#respond form label {
+	display: inline;
+}
+
+.comment-subscription-form input {
+	font-size: 115%;
+}
+
+article.format-quote .entry-content blockquote p {
+	font-family: quatro-slab, 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.format-quote .entry-content cite {
+	display: block;
+	text-align: right;
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 16px;
+	color: #999;
+	font-family: jaf-domus-titling-web, proxima-nova, 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.entry-content p,
+.entry-content li,
+#respond form textarea {
+	font-weight: 100;
+	font-size: 140%;
+}
+
+.comment-content {
+	font-size: 110%;
+	line-height: 50%;
+}
+
+#respond form textarea {
+	font-size: 100%;
+}
+
+/* Footer */
+.site-info {
+	text-align: center;
+	font-family: jaf-domus-titling-web, 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 10px;
+}
+
+.site-info a {
+	text-decoration: none;
+}
+
+.site-info a:hover {
+	text-decoration: underline;
+}
+
+
+/* Code display */
+#primary pre {
+	background: #444;
+	color: #EEE;
+	padding: 15px 20px 15px 20px;
+}
+
+#primary code {
+	font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+	font-size: 13px;
+	border: 1px solid #BCBCBC;
+	padding: 0px 0.2em;
+	display: inline-block;
+	background: #DDD;
+}
