@@ -38,11 +38,11 @@ add_action( 'init', 'cogitate_undo_twentytwelve' );
 
 // Link headers to the blog instead of the front page
 function cogitate_header_blog_link( $url ) {
-	$posts_page_id = get_option( 'page_for_posts');
+	$posts_page_id = get_option( 'page_for_posts' );
 	if ( ! $posts_page_id )
 		return $url;
 
-	$posts_page_url = get_page_uri( $posts_page_id  );
+	$posts_page_url = get_page_uri( $posts_page_id );
 	return trailingslashit( $url . $posts_page_url );
 }
 add_filter( 'cogitate_header_link', 'cogitate_header_blog_link' );
@@ -53,7 +53,7 @@ add_filter( 'previous_post_link', '__return_null' );
 
 // Remove some cruft around the comments form
 function cogitate_comment_form( $comment_form_defaults ) {
-	$comment_form_defaults['comment_notes_after'] = '';
+	$comment_form_defaults['comment_notes_after']  = '';
 	$comment_form_defaults['comment_notes_before'] = '';
 
 	return $comment_form_defaults;
