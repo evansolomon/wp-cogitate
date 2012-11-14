@@ -11,6 +11,7 @@ p,
 li,
 textarea {
 	font-family: 'Proxima Nova', proxima-nova, 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #222;
 }
 
 @media (max-width: 600px) {
