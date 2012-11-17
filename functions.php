@@ -3,6 +3,9 @@
  * @package Cogitate
  */
 
+// Override Twenty Twelve's content width to respect shorter line length
+$content_width = 710;
+
 // Enqueue parent styles instead of @import'ing them
 function cogitate_parent_styles() {
 	wp_enqueue_style( 'cogitate-parent', get_template_directory_uri() . '/style.css' );
