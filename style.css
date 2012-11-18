@@ -251,13 +251,13 @@ article.format-quote .entry-content blockquote p {
 
 
 /* Code display */
-#primary pre {
+.entry-content > pre {
 	background: #444;
 	color: #EEE;
 	padding: 15px 20px 15px 20px;
 }
 
-#primary code {
+.entry-content > code {
 	font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 	font-size: 13px;
 	border: 1px solid #BCBCBC;
