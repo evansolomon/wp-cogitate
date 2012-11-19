@@ -257,7 +257,7 @@ article.format-quote .entry-content blockquote p {
 	padding: 15px 20px 15px 20px;
 }
 
-.entry-content > code {
+.entry-content code {
 	font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 	font-size: 13px;
 	border: 1px solid #BCBCBC;
