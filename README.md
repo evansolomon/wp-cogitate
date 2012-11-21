@@ -1,6 +1,6 @@
 # Cogitate
 
-*v.* To take careful thought or think carefully about; ponder.
+#### *v. To take careful thought or think carefully about; ponder.*
 
 Cogitate is a [Twenty Twelve](http://wordpress.org/extend/themes/twentytwelve) child theme that I built for evansolomon.me.  I wanted to make a theme that:
 
