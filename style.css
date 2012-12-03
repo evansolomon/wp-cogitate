@@ -226,9 +226,12 @@ article.format-quote .entry-content blockquote p {
 	font-size: 140%;
 }
 
-.comment-content {
-	font-size: 110%;
-	line-height: 50%;
+.comment-content p {
+	font-size: 130%;
+}
+
+.comment-content blockquote {
+	background: #EEEEEE;
 }
 
 #respond form textarea {
