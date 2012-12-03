@@ -13,23 +13,23 @@ add_action( 'wp_enqueue_scripts', 'cogitate_parent_styles', 1 );
 function cogitate_typekit() {
 	wp_enqueue_script( 'cogitate_typekit', '//use.typekit.net/ohi7ntj.js' );
 	add_action( 'wp_head', function() {
-		echo "<script type='text/javascript'>try{Typekit.load();}catch(e){}</script>\n";
+		echo apply_filters( 'cogitate_typekit_load', "<script type='text/javascript'>try{Typekit.load();}catch(e){}</script>\n" );
 	} );
 }
 add_action( 'wp_enqueue_scripts', 'cogitate_typekit' );
 
 // Register menus used on the front page
 function cogitate_frontpage_menus() {
-	register_nav_menus( [
+	register_nav_menus( apply_filters( 'cogitate_frontpage_menus', [
 		'frontpage_profiles' => 'Front page profiles',
 		'frontpage_projects' => 'Front page projects',
-	] );
+	] ) );
 }
 add_action( 'init', 'cogitate_frontpage_menus' );
 
 // Undo some TwentyTwelve-isms
 function cogitate_undo_twentytwelve() {
-	unregister_nav_menu( 'primary' );
+	unregister_nav_menu( apply_filters( 'cogitate_undo_twentytwelve_nav_menu', 'primary' ) );
 	add_action( 'wp_enqueue_scripts', function() {
 		wp_dequeue_script( 'twentytwelve-navigation' );
 	}, 11 );
@@ -56,7 +56,7 @@ function cogitate_comment_form( $comment_form_defaults ) {
 	$comment_form_defaults['comment_notes_after']  = '';
 	$comment_form_defaults['comment_notes_before'] = '';
 
-	return $comment_form_defaults;
+	return apply_filters( 'cogitate_comment_form_defaults', $comment_form_defaults );
 }
 add_filter( 'comment_form_defaults', 'cogitate_comment_form' );
 
@@ -67,12 +67,12 @@ function cogitate_last_post() {
 	if ( $query )
 		return $query;
 
-	$query = new WP_Query( [
+	$query = new WP_Query( apply_filters( 'cogitate_last_post_query', [
 		'post_type'      => 'post',
 		'post_status'    => 'publish',
 		'posts_per_page' => 1,
 		'no_found_rows'  => true,
-	] );
+	] ) );
 
 	return $query;
 }
@@ -109,6 +109,8 @@ function twentytwelve_entry_meta() {
 		$utility_text = __( 'Published on %3$s<span class="by-author"> by %4$s</span>.', 'twentytwelve' );
 	}
 
+	do_action( 'cogitate_before_entry_meta' );
+
 	printf(
 		$utility_text,
 		$categories_list,
@@ -116,4 +118,6 @@ function twentytwelve_entry_meta() {
 		$date,
 		$author
 	);
+
+	do_action( 'cogitate_after_entry_meta' );
 }
