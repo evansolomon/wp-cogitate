@@ -244,6 +244,29 @@ article.format-quote .entry-content blockquote p {
 	border-radius: 3px;
 }
 
+/* Submit buttons */
+input[type="submit"] {
+	background-image: -moz-linear-gradient(top, #F38630, #F39853);
+	background-image: -ms-linear-gradient(top, #F38630, #F39853);
+	background-image: -o-linear-gradient(top, #F38630, #F39853);
+	background-image: -webkit-linear-gradient(top, #F38630, #F39853);
+	background-image: linear-gradient(top, #F38630, #F39853);
+	color: #FFF;
+	border: 1px solid #f2700c;
+	letter-spacing: 1px;
+}
+
+input[type="submit"]:hover {
+	background-image: -moz-linear-gradient(top, #F39853, #F38630);
+	background-image: -ms-linear-gradient(top, #F39853, #F38630);
+	background-image: -o-linear-gradient(top, #F39853, #F38630);
+	background-image: -webkit-linear-gradient(top, #F39853, #F38630);
+	background-image: linear-gradient(top, #F39853, #F38630);
+	color: #FFF;
+	border: 1px solid #f2700c;
+	letter-spacing: 1px;
+}
+
 /* Footer */
 .site-info {
 	text-align: center;
