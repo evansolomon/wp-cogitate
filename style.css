@@ -238,6 +238,12 @@ article.format-quote .entry-content blockquote p {
 	font-size: 100%;
 }
 
+.comment-meta .avatar {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
 /* Footer */
 .site-info {
 	text-align: center;
