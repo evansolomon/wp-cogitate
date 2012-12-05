@@ -242,22 +242,22 @@ article.format-quote .entry-content blockquote p {
 
 /* Submit buttons */
 input[type="submit"] {
-	background-image: -moz-linear-gradient(top, #F38630, #F39853);
-	background-image: -ms-linear-gradient(top, #F38630, #F39853);
-	background-image: -o-linear-gradient(top, #F38630, #F39853);
-	background-image: -webkit-linear-gradient(top, #F38630, #F39853);
-	background-image: linear-gradient(top, #F38630, #F39853);
+	background-image: -moz-linear-gradient(top, #F38630, #DC670E);
+	background-image: -ms-linear-gradient(top, #F38630, #DC670E);
+	background-image: -o-linear-gradient(top, #F38630, #DC670E);
+	background-image: -webkit-linear-gradient(top, #F38630, #DC670E);
+	background-image: linear-gradient(top, #F38630, #DC670E);
 	color: #FFF;
 	border: 1px solid #f2700c;
 	letter-spacing: 1px;
 }
 
 input[type="submit"]:hover {
-	background-image: -moz-linear-gradient(top, #F39853, #F38630);
-	background-image: -ms-linear-gradient(top, #F39853, #F38630);
-	background-image: -o-linear-gradient(top, #F39853, #F38630);
-	background-image: -webkit-linear-gradient(top, #F39853, #F38630);
-	background-image: linear-gradient(top, #F39853, #F38630);
+	background-image: -moz-linear-gradient(top, #E96E10, #F17E27);
+	background-image: -ms-linear-gradient(top, #E96E10, #F17E27);
+	background-image: -o-linear-gradient(top, #E96E10, #F17E27);
+	background-image: -webkit-linear-gradient(top, #E96E10, #F17E27);
+	background-image: linear-gradient(top, #E96E10, #F17E27);
 	color: #FFF;
 	border: 1px solid #f2700c;
 	letter-spacing: 1px;
