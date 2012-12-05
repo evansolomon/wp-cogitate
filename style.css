@@ -197,10 +197,6 @@ body.home article {
 	}
 }
 
-#respond form label {
-	display: inline;
-}
-
 .comment-subscription-form input {
 	font-size: 115%;
 }
