@@ -116,7 +116,8 @@ body.home a,
 }
 
 body.home .entry-content {
-	margin: 0 30% 0 30%;
+	margin: auto;
+	max-width: 400px;
 }
 
 @media (max-width: 630px) {
