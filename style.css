@@ -27,6 +27,12 @@ textarea {
 	font-family: jaf-domus-titling-web, 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
+@media (max-width: 600px) {
+	.site-header h1 {
+		line-height: 1.6;
+	}
+}
+
 .site-title a {
 	border-bottom: 4px double #F38630;
 }
