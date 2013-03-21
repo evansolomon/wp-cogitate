@@ -85,13 +85,6 @@ function twentytwelve_entry_meta() {
 	// Translators: used between list items, there is a space after the comma.
 	$tag_list = get_the_tag_list( '', __( ', ', 'twentytwelve' ) );
 
-	$date = sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a>',
-		esc_url( get_permalink() ),
-		esc_attr( get_the_time() ),
-		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() )
-	);
-
 	$author = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
 		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 		esc_attr( sprintf( __( 'View all posts by %s', 'twentytwelve' ), get_the_author() ) ),
@@ -99,14 +92,12 @@ function twentytwelve_entry_meta() {
 	);
 
 	// Translators: 1 is category, 2 is tag, 3 is the date and 4 is the author's name.
-	if ( ! is_single() ) {
-		$utility_text = 'Published on %3$s';
-	} elseif ( $tag_list ) {
-		$utility_text = __( 'Published in %1$s, and tagged %2$s on %3$s<span class="by-author"> by %4$s</span>.', 'twentytwelve' );
+	if ( $tag_list ) {
+		$utility_text = __( 'Published in %1$s, and tagged %2$s<span class="by-author"> by %3$s</span>.', 'twentytwelve' );
 	} elseif ( $categories_list ) {
-		$utility_text = __( 'Published in %1$s on %3$s<span class="by-author"> by %4$s</span>.', 'twentytwelve' );
+		$utility_text = __( 'Published in %1$s<span class="by-author"> by %3$s</span>.', 'twentytwelve' );
 	} else {
-		$utility_text = __( 'Published on %3$s<span class="by-author"> by %4$s</span>.', 'twentytwelve' );
+		$utility_text = __( 'Published<span class="by-author"> by %3$s</span>.', 'twentytwelve' );
 	}
 
 	do_action( 'cogitate_before_entry_meta' );
@@ -115,7 +106,6 @@ function twentytwelve_entry_meta() {
 		$utility_text,
 		$categories_list,
 		$tag_list,
-		$date,
 		$author
 	);
 

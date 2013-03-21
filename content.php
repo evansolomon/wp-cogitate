@@ -22,6 +22,9 @@
 				<a href="<?php the_permalink(); ?>" title="<?= esc_attr( sprintf( __( 'Permalink to %s', 'twentytwelve' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h1>
 			<?php endif; // is_single() ?>
+			<div class="entry-date">
+				Published on <? the_date( 'F j<\s\u\p>S<\/\s\u\p>, Y' ); ?>
+			</div>
 		</header><!-- .entry-header -->
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>

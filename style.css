@@ -204,6 +204,13 @@ body.home article {
 	}
 }
 
+.entry-date {
+	margin: 40px 0 40px 40px;
+	text-align: right;
+	font-size: 18px;
+	font-family: jaf-domus-titling-web;
+}
+
 .comment-subscription-form input {
 	font-size: 115%;
 }
