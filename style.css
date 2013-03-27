@@ -37,7 +37,15 @@ textarea {
 	border-bottom: 4px double #F38630;
 }
 
+#page {
+	max-width: 800px;
+}
+
 /* Front Page */
+body.home #page {
+	max-width: 960px;
+}
+
 body.home .site-title {
 	font-size: 110px;
 	font-family: jaf-domus-titling-web, 'Open Sans', Helvetica, Arial, sans-serif;
@@ -193,6 +201,12 @@ body.home article {
 }
 
 /* Blog */
+article .entry-content,
+.comment-content {
+	max-width: 630px;
+	margin: auto;
+}
+
 .entry-header .entry-title {
 	font-family: quatro-slab, 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 60px;
