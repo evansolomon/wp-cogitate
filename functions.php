@@ -9,7 +9,7 @@ function cogitate_parent_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'cogitate_parent_styles', 1 );
 
-// Load Typekit and output it's inline script
+// Load Typekit and output its inline script
 function cogitate_typekit() {
 	wp_enqueue_script( 'cogitate_typekit', '//use.typekit.net/ohi7ntj.js' );
 	add_action( 'wp_head', function() {
